@@ -1,0 +1,140 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<!-- /.navbar -->
+
+<header id="head" class="secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>About us</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="team-content">
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</section>
+<!-- container -->
+<section class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <!-- Team Member -->
+            <div class="team-member">
+                <!-- Image Hover Block -->
+                <div class="member-img">
+                    <!-- Image  -->
+                    <img class="img-responsive" src="{{ course.image.url }}" alt="" ,
+                        style=" height: 10cm; width: 100cm;">
+                </div>
+                <!-- Member Details -->
+                <a href="#">
+                    <h4>{{course.name}}</h4>
+                </a>
+                <!-- Designation -->
+                <span class="pos">{{ course.description }}</span>
+                <div class="team-socials">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <aside class="col-sm-4 sidebar sidebar-right">
+            <div class="panel">
+                <h4>Latest News</h4>
+                <ul class="list-unstyled list-spaces">
+                    {% for category in categories %}
+                    <li><a href="">{{category.name}}</a><br>
+                    {% endfor %}
+                </ul>
+                <button class="button button11">Green</button>
+                <button class="button button22">Green</button>
+                <button class="button button11">Green</button><br>
+                <button class="button button22">Green</button>
+                <button class="button button11">Green</button>
+                <button class="button button22">Green</button><br>
+            </div>
+
+        </aside>
+        <!-- /Sidebar -->
+
+    </div>
+</section>
+<!-- /container -->
+<section class="btm-section secpadding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="title-box clearfix ">
+                    <h3 class="title-box_primary">New Projects</h3>
+                </div>
+                <div class="list styled custom-list">
+                    <ul>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus."
+                                href="#">Singapore Township</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus."
+                                href="#">Mega luxury Villas</a></li>
+                        <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">RNT
+                                Commercial Shopping Mall</a></li>
+                        <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci."
+                                href="#">SVN Independent & Duplex Houses</a></li>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus."
+                                href="#">World wide IT park</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus."
+                                href="#">North Arena SNT Township</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="title-box clearfix ">
+                    <h3 class="title-box_primary">Large Projects</h3>
+                </div>
+                <div class="list styled custom-list">
+                    <ul>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus."
+                                href="#">Singapore Township</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus."
+                                href="#">Mega luxury Villas</a></li>
+                        <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">RNT
+                                Commercial Shopping Mall</a></li>
+                        <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci."
+                                href="#">SVN Independent & Duplex Houses</a></li>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus."
+                                href="#">World wide IT park</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus."
+                                href="#">North Arena SNT Township</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="title-box clearfix ">
+                    <h3 class="title-box_primary">Our Clients</h3>
+                </div>
+                <blockquote class="blockquote-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim
+                        pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
+                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                </blockquote>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
